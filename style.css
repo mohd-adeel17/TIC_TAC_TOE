@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&family=Montserrat:wght@300&family=Open+Sans:wght@300&family=Oswald&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+   
+}
+body{
+    background-color: rgb(238, 239, 232);
+    
+    
+}
+nav{
+    background-color: rgba(72, 65,90, 23);
+    color: black;
+    height: 60px ;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+   padding-left: 15px;
+    font-family: 'Oswald', sans-serif;
+
+   
+}
+nav ul{
+    list-style-type: none;
+    color: azure;
+
+}
+.game{
+   
+     display: flex;
+     justify-content: center;
+     margin-top: 30px;
+}
+.container{
+    color: rgb(77, 34, 34);
+   
+    display: grid;
+    background-color: rgb(238, 239, 232);
+    grid-template-rows: repeat(3,10vw);
+    grid-template-columns: repeat(3,10vw);
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+}
+
+.box{
+    border: 2px solid black;
+    font-size: 8vw;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box:hover{
+   color: rgb(7, 7, 7);
+   background-color:rgb(196, 201, 200);
+}
+.info{
+    font-size: 25px;
+    font-family: 'Montserrat', sans-serif
+}
+
+.gameinfo{
+    padding:0 24px;
+    font-family: 'Montserrat', sans-serif
+}
+
+.imgbox img{
+    width:0px;
+    transition: 1s ease-in-out;
+}
+
+.br-0{
+    border-right: 0;
+}
+.bl-0{
+    border-left: 0;
+}
+.bt-0{
+    border-top: 0;
+}
+.bb-0{
+    border-bottom: 0;
+}
+
+#reset{
+    background-color:  rgba(72, 65,90, 23);
+    color: aliceblue;
+    height: 40px;
+    width: 100px;
+    border-radius: 8px 8px ;
+    font-size: large;
+    font-family: 'Montserrat', sans-serif;
+    border: none;
+    margin: 10px 23px;
+   cursor: pointer;
+ 
+ }
+
+ .line{
+    height:3px;
+    width: 0vw;
+    position: absolute;
+    background-color: rgba(72, 65,90, 23);
+    transition: 1s width ease-in-out;
+ }
+ .musicplayer{
+    margin-top: 20px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+ }
+
+ #musicplay,#musicstop{
+    background-color:  rgba(72, 65,90, 23);
+    color: aliceblue;
+    height: 40px;
+    width: 100px;
+    border-radius: 8px 8px ;
+    font-size: large;
+    font-family: 'Montserrat', sans-serif;
+    border: none;
+    margin: 10px 23px;
+   cursor: pointer;
+ 
+ }
+
+
+ @media screen and (max-width:900px)  {
+
+    .game{
+        flex-wrap: wrap;
+    }
+    .gameinfo{
+        margin-top: 34px;
+    }
+    .gameinfo h1{
+        font-size: 1.5rem;
+    }
+    .container{
+        display: grid;
+        grid-template-columns: repeat(3,20vw);
+        grid-template-rows: repeat(3,20vw);
+    }
+    
+    
+ }
